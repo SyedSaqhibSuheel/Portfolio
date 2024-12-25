@@ -1,38 +1,272 @@
-.App {
+*{padding: 0; margin: 0; box-sizing: border-box; }
+.Protfolio{
+  width: 100%;
+  height: 100vh;
+  background: #171c28;
+ 
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
   text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 1.5em;  
+  font-family: cursive;
+
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1000px) {
+  h1 {
+  
+    top: 20%;     
+    left: -15%;    
+    transform: none;  
+    font-size: 2em; 
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media (min-width: 1200px) {
+  h1 {
+  
+    top: 20%;     
+    left: -15%;    
+    transform: none;  
+    font-size: 3em; 
+  }
+}
+
+h3 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  text-align: center;
+  width: 100%;
   color: white;
+  font-size: 1em;  
+  font-family: cursive;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1000px) {
+  h3 {
+  
+    top: 30%;     
+    left: -17%;    
+    transform: none;  
+    font-size: 1em; 
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
+@media (min-width: 1200px) {
+  h3 {
+  
+    top: 30%;     
+    left: -17%;    
+    transform: none;  
+    font-size: 1.5em; 
+  }
+}
+
+
+
+@keyframes shakeRotate {
+  0% {
+    transform: rotate(20deg);
+  }
+  10% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(0deg);
   }
+}
+
+
+h1 span {
+  display: inline-block;
+  animation: shakeRotate 1s ease-in-out infinite;  
+  animation-delay: 0s; 
+}
+
+
+h1 span {
+  animation: shakeRotate 3s ease-in-out infinite; 
+  animation-delay: 5s;
+}
+
+
+
+
+
+
+
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper div{
+  width: 70px;
+  height: 70px;
+  border: 5px solid white;
+  position: absolute;
+
+}
+
+.wrapper div:nth-child(1){
+  top: 10%;
+  left: 30%;
+  animation: square 5s linear infinite;
+}
+
+.wrapper div:nth-child(2){
+  top: 20%;
+  left: 50%;
+  animation: square 8s linear infinite;
+}
+
+.wrapper div:nth-child(3){
+  top: 50%;
+  left: 70%;
+  animation: square 12s linear infinite;
+}
+
+.wrapper div:nth-child(4){
+  top: 30%;
+  left: 90%;
+  animation: square 6s linear infinite;
+}
+
+.wrapper div:nth-child(5){
+  top: 90%;
+  left: 80%;
+  animation: square 10s linear infinite;
+}
+
+.wrapper div:nth-child(6){
+  top: 60%;
+  left: 25%;
+  animation: square 13s linear infinite;
+}
+
+.wrapper div:nth-child(7){
+  top: 10%;
+  left: 70%;
+  animation: square 7s linear infinite;
+}
+
+.wrapper div:nth-child(8){
+  top: 70%;
+  left: 50%;
+  animation: square 11s linear infinite;
+}
+
+.wrapper div:nth-child(9){
+  top: 10%;
+  left: 10%;
+  animation: square 11s linear infinite;
+}
+
+.wrapper div:nth-child(10){
+  top: 80%;
+  left: 15%;
+  animation: square 11s linear infinite;
+}
+
+@keyframes square{
+  0%{
+    transform: scale(0) translate(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.2) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+.photo{
+  position: relative;
+  left: 60%;
+  top: -600px;
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  border: 5px solid #3498db;
+}
+
+
+
+.icons {
+  position: relative;
+  top: -750px;
+  left: 25%;
+  display: flex;
+  gap: 20px; /* Adds space between the icons */
+}
+
+.icons svg {
+  font-size: 40px;
+  color: aliceblue;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons svg:hover {
+  color: #ff6347;
+  transform: translateY(-10px); /* Move the icon up when hovered */
+}
+
+.icons svg:active {
+  color: #32cd32;
+  transform: scale(1.1); /* Slightly enlarge the icon when clicked */
+}
+
+.button {
+  position: relative;
+  background-color: #3498db;
+  border: none;
+  margin: 10px;
+  padding: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  border-radius: 5px;
+  top: -700px;
+  left: 21%;
+  color: white; /* Set text color to white */
+  cursor: pointer; /* Make sure the cursor is a pointer when hovering over the button */
+  transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #2980b9; /* Darker blue when hovering */
+  transform: translateY(-5px); /* Lift the button slightly on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect on hover */
+}
+
+/* Active effect (when button is clicked) */
+.button:active {
+  background-color: #1abc9c; /* Change background color when clicked */
+  transform: translateY(2px); /* Simulate a "pressed" effect by moving the button down */
+  box-shadow: none; /* Remove the shadow on click */
 }
