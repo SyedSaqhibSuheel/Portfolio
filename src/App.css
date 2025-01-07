@@ -1,123 +1,286 @@
-*{padding: 0; margin: 0; box-sizing: border-box; }
-.Protfolio{
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Portfolio Main Styles */
+.Portfolio {
   width: 100%;
   height: 100vh;
   background: #171c28;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #171c28;
+  
+  padding: 10px 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end; /* Aligns the content to the right */
+  align-items: center;
+}
+
+.navbar.hide {
+  top: -50px;  /* Move navbar out of view when hidden */
+}
+
+.navbar.show {
+  top: 0; /* Show navbar */
+}
+/* Align nav-links to the right */
+.navbar .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin-left: auto; /* Pushes the nav-links to the right */
+}
+
+/* Navbar links styling */
+.navbar .nav-links li {
+  font-size: 1.2em;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff6347;
+  transform: translateY(-5px);
+}
+
+.navbar .nav-links a:active {
+  color: #32cd32;
+  transform: scale(1.1);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px; /* Optional: add some space between hamburger and navbar */
+}
+
+/* Mobile Navigation - Hide links initially */
+.navbar .nav-links.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 0; /* Align the mobile menu to the right */
+  width: 100%;
+  background-color: #171c28;
+  padding: 20px;
+  text-align: center;
+  z-index: 100;
+}
+
+.navbar .nav-links.active li {
+  margin: 10px 0;
+}
+
+.navbar .nav-links.active a {
+  font-size: 1.5em;
+}
+
+
+/* Main Content */
+.content {
+  position: relative;
+  text-align: center;
+  padding-top: 80px; /* Adjust for fixed navbar */
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+  margin-bottom: 20px;
 }
 
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  
-  text-align: center;
-  width: 100%;
-  color: white;
-  font-size: 1.5em;  
   font-family: cursive;
-
-  display: inline-block;
-}
-
-@media (min-width: 1000px) {
-  h1 {
-  
-    top: 20%;     
-    left: -15%;    
-    transform: none;  
-    font-size: 2em; 
-  }
-}
-
-@media (min-width: 1200px) {
-  h1 {
-  
-    top: 20%;     
-    left: -15%;    
-    transform: none;  
-    font-size: 3em; 
-  }
+  font-size: 2.5em;
 }
 
 h3 {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);  
-  text-align: center;
-  width: 100%;
-  color: white;
-  font-size: 1em;  
   font-family: cursive;
-  display: inline-block;
+  font-size: 1.5em;
+  margin: 20px;
 }
 
-@media (min-width: 1000px) {
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.icons svg {
+  font-size: 40px;
+  color: aliceblue;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons svg:hover {
+  color: #ff6347;
+  transform: translateY(-10px);
+}
+
+.icons svg:active {
+  color: #32cd32;
+  transform: scale(1.1);
+}
+
+.button {
+  background-color: #3498db;
+  border: none;
+  margin: 10px;
+  padding: 15px;
+  font-size: large;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+  transform: translateY(-5px);
+}
+
+.button:active {
+  background-color: #1abc9c;
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* Hide on small screens */
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  .navbar .nav-links.active {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
   h3 {
-  
-    top: 30%;     
-    left: -17%;    
-    transform: none;  
-    font-size: 1em; 
+    font-size: 1em;
+  }
+
+  .photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .icons svg {
+    font-size: 50px;
+  }
+
+  .button {
+    padding: 12px;
+    font-size: medium;
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 500px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links li {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
   h3 {
-  
-    top: 30%;     
-    left: -17%;    
-    transform: none;  
-    font-size: 1.5em; 
+    font-size: 1em;
+  }
+
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .icons svg {
+    font-size: 30px;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: small;
   }
 }
 
+@media (max-width: 400px) {
+  .navbar .nav-links li {
+    font-size: 0.8em;
+  }
 
+  h1 {
+    font-size: 1.3em;
+  }
 
-@keyframes shakeRotate {
-  0% {
-    transform: rotate(20deg);
+  h3 {
+    font-size: 1em;
   }
-  10% {
-    transform: rotate(-20deg);
+
+  .photo {
+    width: 150px;
+    height: 150px;
   }
-  20% {
-    transform: rotate(15deg);
+
+  .icons svg {
+    font-size: 40px;
   }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
+
+  .button {
+    padding: 8px;
+    font-size: small;
   }
 }
-
-
-h1 span {
-  display: inline-block;
-  animation: shakeRotate 1s ease-in-out infinite;  
-  animation-delay: 0s; 
-}
-
-
-h1 span {
-  animation: shakeRotate 3s ease-in-out infinite; 
-  animation-delay: 5s;
-}
-
-
-
-
-
-
-
 
 .wrapper{
   width: 100%;
@@ -204,69 +367,193 @@ h1 span {
   }
 }
 
-
-.photo{
-  position: relative;
-  left: 60%;
-  top: -600px;
-  width: 30%;
-  height: 30%;
-  border-radius: 100%;
-  border: 5px solid #3498db;
+.section1{
+  width: 100%;
+  height: 100vh;
+  background: #171c28;
 }
 
+.section2{
+  width: 100%;
+  height: 100vh;
+  background: #171c28;
+}
 
+.section3{
+  width: 100%;
+  height: 100vh;
+  background: #171c28;
+}
 
-.icons {
-  position: relative;
-  top: -750px;
-  left: 25%;
+.section4{
+  width: 100%;
+  height: 100vh;
+  background: #171c28;
+}
+
+.section5{
+  width: 100%;
+  height: 100vh;
+  background: #171c28;
+}
+
+.ok{
+  background: #171c28;
+}
+
+#work-experience {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.experience-container {
   display: flex;
-  gap: 20px; /* Adds space between the icons */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.icons svg {
-  font-size: 40px;
-  color: aliceblue;
-  transition: transform 0.3s ease, color 0.3s ease;
+.experience {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  flex-basis: 30%; /* This will allow three boxes in a row */
+  box-sizing: border-box;
 }
 
-.icons svg:hover {
-  color: #ff6347;
-  transform: translateY(-10px); /* Move the icon up when hovered */
+.company-logo {
+  flex-basis: 30%; /* Logo takes up 30% of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow; /* Set a background color */
+  padding: 10px;
+  border-radius: 8px;
+}
+.company-logo.mobiot{
+  background-color: goldenrod;
 }
 
-.icons svg:active {
-  color: #32cd32;
-  transform: scale(1.1); /* Slightly enlarge the icon when clicked */
+.company-logo.inventron{
+  background-color: red;
+  padding: 0px;
 }
 
-.button {
-  position: relative;
-  background-color: #3498db;
-  border: none;
-  margin: 10px;
-  padding: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: large;
-  border-radius: 5px;
-  top: -700px;
-  left: 21%;
-  color: white; /* Set text color to white */
-  cursor: pointer; /* Make sure the cursor is a pointer when hovering over the button */
-  transition: all 0.3s ease; /* Smooth transition for hover and active effects */
+.company-logo.qset{
+  background-color: white;
+  padding: 0px;
 }
 
-/* Hover effect */
-.button:hover {
-  background-color: #2980b9; /* Darker blue when hovering */
-  transform: translateY(-5px); /* Lift the button slightly on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect on hover */
+
+.company-logo.mobiot img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  padding: 60px;
 }
 
-/* Active effect (when button is clicked) */
-.button:active {
-  background-color: #1abc9c; /* Change background color when clicked */
-  transform: translateY(2px); /* Simulate a "pressed" effect by moving the button down */
-  box-shadow: none; /* Remove the shadow on click */
+.company-logo.inventron img {
+  max-width: 250px;
+ 
+  border-radius: 8px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.company-logo.qset img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.company-logo img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 10px; /* Space between logo and separator */
+}
+
+.experience-details {
+  flex-basis: 70%; /* Remaining 70% for company details and experience info */
+  padding: 5px;
+}
+
+.company-details {
+  margin-bottom: 15px;
+}
+
+.company-details h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  color: white;
+
+}
+.section1 h2{
+  color: white;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.company-details p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 5px 0;
+  gap: 2px;
+}
+
+.experience-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experience-info li {
+  margin-bottom: 10px;
+  color: #ccc;
+  text-align: justify;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .experience {
+    flex-basis: 48%; /* Two boxes in a row */
+  }
+
+  .company-logo {
+    flex-basis: 25%; /* Logo takes 25% of the space */
+  }
+
+  .experience-details {
+    flex-basis: 75%; /* Experience details take 75% */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    flex-basis: 100%; /* One box per row */
+  }
+
+  .company-logo {
+    flex-basis: 30%; /* Keep logo taking 30% */
+  }
+
+  .experience-details {
+    flex-basis: 70%; /* Experience details take 70% */
+  }
 }
