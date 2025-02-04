@@ -3,12 +3,12 @@ import emailjs from '@emailjs/browser';
 
 export const ContactUs = () => {
   const form = useRef();
-  const [isSent, setIsSent] = useState(false); // To show success message
-  const [isSending, setIsSending] = useState(false); // To show loading status
+  const [isSent, setIsSent] = useState(false); 
+  const [isSending, setIsSending] = useState(false); 
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsSending(true); // Set loading state to true
+    setIsSending(true); 
 
     emailjs
       .sendForm('service_q6tq12r', 'template_hklb2nq', form.current, {
@@ -16,16 +16,16 @@ export const ContactUs = () => {
       })
       .then(
         () => {
-          setIsSent(true); // Set success message
-          form.current.reset(); // Reset the form
-          setIsSending(false); // Set loading state to false
+          setIsSent(true); 
+          form.current.reset(); 
+          setIsSending(false); 
 
-          // Hide the success message after 3 seconds
+         
           setTimeout(() => setIsSent(false), 3000);
         },
         (error) => {
           console.log('FAILED...', error.text);
-          setIsSending(false); // Set loading state to false if error occurs
+          setIsSending(false); 
         }
       );
   };
@@ -48,7 +48,7 @@ export const ContactUs = () => {
       </form>
 
 
-      {/* Success message */}
+     
       {isSent && <div className="alert-success">Message sent successfully!</div>}
       </div>
     </div>
