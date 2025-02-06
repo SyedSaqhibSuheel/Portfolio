@@ -20,9 +20,15 @@ function Home(){
           other cool libraries and frameworks.
         </h3>
         <div className="icons">
-          <GitHubIcon  />
+        <a href="https://github.com/SyedSaqhibSuheel" target="_blank" rel="noopener noreferrer">
+  <GitHubIcon />
+</a> 
+          <a href='https://in.linkedin.com/in/syed-saqhib-suheel'> 
           <LinkedInIcon />
+          </a> 
+          <a href='https://www.instagram.com/code__yatra?igsh=dmd5NmQ0a2tmNW4y'>
           <InstagramIcon />
+          </a>
           <a href="#contact">
   <EmailIcon /> 
 </a>

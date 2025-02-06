@@ -1,4 +1,7 @@
-import git from "./images/git.png"
+
+import myntra from "./images/Myntra-logo.png"
+import face from "./images/face.jpeg"
+
 
 function Project(){
     return(
@@ -11,7 +14,7 @@ function Project(){
           
          
           <div className="project-box">
-          <img src={git} alt="git" className="project-image" />
+          <img src={myntra} alt="git" className="project-image" />
           <div className="info-container">
            
             <ul>
@@ -29,7 +32,7 @@ function Project(){
           
          
           <div className="project-box">
-          <img src={git} alt="git" className="project-image" />
+          <img src={face} alt="git" className="project-image" />
           <div className="info-container">
            
           <p>Smart India Hackathon Winner (National level) (April 2022 – August 2022)</p>
