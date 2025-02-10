@@ -124,15 +124,28 @@ body {
 }
 
 h1 {
-  font-family: cursive;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.5em;
 }
 
 h3 {
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
   margin: 20px;
 }
+
+/* Increase font size for screens 480px and above */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h3 {
+    font-size: 2px;
+    margin: 30px;
+  }
+}
+
 
 .icons {
   display: flex;
