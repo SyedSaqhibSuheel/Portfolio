@@ -159,6 +159,12 @@ h3 {
   color: aliceblue;
   transition: transform 0.3s ease, color 0.3s ease;
 }
+@media (max-width: 480px) {
+  .icons svg {
+    font-size: 50px;
+    
+  }
+}
 
 .icons svg:hover {
   color: #ff6347;
@@ -181,7 +187,12 @@ h3 {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+@media (max-width: 480px) {
+  .button {
+    font-size: x-large;
+    padding: 18px; /* Optional: Adjust padding for better touch usability */
+  }
+}
 .button:hover {
   background-color: #2980b9;
   transform: translateY(-5px);
@@ -312,21 +323,21 @@ h3 {
 }
 
 .wrapper div:nth-child(1){
-  top: 10%;
+  top: 90%;
   left: 30%;
   animation: square 5s linear infinite;
 }
 
 .wrapper div:nth-child(2){
-  top: 20%;
+  top: 70%;
   left: 50%;
-  animation: square 8s linear infinite;
+  animation: square 5s linear infinite;
 }
 
 .wrapper div:nth-child(3){
   top: 50%;
   left: 70%;
-  animation: square 12s linear infinite;
+  animation: square 4s linear infinite;
 }
 
 .wrapper div:nth-child(4){
@@ -348,21 +359,21 @@ h3 {
 }
 
 .wrapper div:nth-child(7){
-  top: 10%;
+  top: 60%;
   left: 70%;
-  animation: square 7s linear infinite;
+  animation: square 6s linear infinite;
 }
 
 .wrapper div:nth-child(8){
   top: 70%;
-  left: 50%;
-  animation: square 11s linear infinite;
+  left: 0%;
+  animation: square 5s linear infinite;
 }
 
 .wrapper div:nth-child(9){
-  top: 10%;
+  top: 99%;
   left: 10%;
-  animation: square 11s linear infinite;
+  animation: square 3s linear infinite;
 }
 
 .wrapper div:nth-child(10){
