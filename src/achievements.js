@@ -6,6 +6,15 @@ function Achievements(){
         <>
         <div id="achievements" class="section3">
           <h2>Achievements</h2>
+          <div class=" thought">
+                <ul>
+                <li>"Achievements are not just milestones; they are proof of perseverance, innovation, and the courage to turn ideas into reality." 🚀</li>
+         
+        </ul>
+        
+        
+                </div>
+          
           <div class="achi-container">
             <div class="achi">
               <div class="achi-logo sih">
@@ -24,7 +33,7 @@ function Achievements(){
                 </div>
                 <div class="ex-info">
                 <ul>
-          <li>Designed and implemented a low-cost, scalable facial recognition-based attendance system for schools and colleges, achieving a 75% reduction in operational costs. Integrated Raspberry Pi 4B with cameras to conduct real-time face recognition for accurate student attendance tracking. Developed an automated data export feature to generate and store attendance sheets. Additionally, incorporated a liveliness detection system to enhance security and prevent unauthorized access, ensuring system reliability and integrity</li>
+                <li>Engineered a cost-effective, scalable facial recognition attendance system for educational institutions, slashing operational costs by 75%. Leveraged Raspberry Pi 4B with real-time face recognition to streamline student tracking. Designed an automated data export feature for seamless attendance reporting and integrated liveness detection to prevent spoofing, ensuring robust security and system integrity.</li>
          
         </ul>
         
@@ -48,8 +57,7 @@ function Achievements(){
                 </div>
                 <div class="ex-info">
                 <ul>
-          <li>Won first place in the Entrepreneurship Meet by presenting an innovative business concept based on a Facial Recognition Attendance System designed for educational institutions.Demonstrated strong entrepreneurial skills, including market research, business strategy, and effective pitching. Collaborated with a team to develop a viable business model that addressed a gap in the market, showcasing creativity, problem-solving, and leadership abilities. The experience enhanced my understanding of business development and entrepreneurship.</li>
-          
+                <li>Secured 1st place at the Entrepreneurship Meet by pitching an innovative Facial Recognition Attendance System for educational institutions. Showcased market research, business strategy, and persuasive pitching skills while collaborating on a viable business model. Demonstrated creativity, problem-solving, and leadership, reinforcing expertise in business development and entrepreneurship.</li>
         </ul>
         
                 </div>

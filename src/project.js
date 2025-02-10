@@ -18,7 +18,7 @@ function Project(){
           <div className="info-container">
            
             <ul>
-            Built a Myntra clone using React and Redux from August 2023 to October 2023. Implemented features like adding items to the bag, calculating the total cost, and removing items from the bag. Worked on ensuring smooth functionality and good user experience.
+            Built a Myntra clone using React and Redux, focusing on seamless user experience and smooth functionality. Implemented key features such as adding/removing items to/from the bag, calculating total cost, and ensuring responsive design with Bootstrap for an engaging and efficient shopping experience
             </ul>
           </div>
         </div>
@@ -35,10 +35,9 @@ function Project(){
           <img src={face} alt="git" className="project-image" />
           <div className="info-container">
            
-          <p>Smart India Hackathon Winner (National level) (April 2022 – August 2022)</p>
+        
                   <ul>
-                    A low-cost, robust, highly scalable attendance system with an end-to-end solution for schools & colleges, providing 75% cost reduction.
-                    Cameras connected with Raspberry Pi 4B for face recognition, with a liveliness detection system.
+                  Developed a low-cost, scalable attendance system for schools and colleges, offering a 75% reduction in operational costs. Utilized Raspberry Pi 4B with real-time face recognition and integrated a liveness detection system to enhance security and ensure accurate student attendance tracking, providing an end-to-end solution for seamless attendance management.
                   </ul>
           </div>
         </div>

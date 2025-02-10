@@ -26,8 +26,9 @@ function Work(){
                 </div>
                 <div class="experience-info">
                 <ul>
+                <li>Built AI-powered UI components, real-time collaboration tools, and customizable profile pages, leveraging <strong>HTML</strong>, <strong>CSS</strong>, and <strong>API integration</strong>.</li>
           <li>Optimized landing pages and developed interactive features using <strong>JavaScript</strong>, <strong>React</strong>, <strong>Redux</strong>, and <strong>Material-UI</strong>, enhancing user experience.</li>
-          <li>Built AI-powered UI components, real-time collaboration tools, and customizable profile pages, leveraging <strong>HTML</strong>, <strong>CSS</strong>, and <strong>API integration</strong>.</li>
+          
         </ul>
         
         
@@ -46,13 +47,15 @@ function Work(){
                 <div class="company-details">
                   <h3>Associate Software Engineer</h3>
                   <p>Inventron Technologies</p>
+                  <p>Project -  e-learning platforms</p>
+                 
                   <p>June 2023 - May 2024</p>
                  
                 </div>
                 <div class="experience-info">
                 <ul>
-          <li>Designed and developed user-friendly, dynamic web pages using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Bootstrap</strong>, improving interactivity and data display.</li>
-          <li>Gained experience with <strong>Java</strong> for backend development and contributed to UI design with a focus on accessibility and user-centered principles.</li>
+          <li>Implemented a seamless course video upload feature with optimized performance, large file handling, and error management for an enhanced user experience.</li>
+          <li>Gained experience with <strong>Java</strong> and contributed to UI design with a focus on accessibility and user-centered principles.</li>
         </ul>
         
                 </div>
