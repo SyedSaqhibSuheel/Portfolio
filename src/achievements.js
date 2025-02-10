@@ -27,7 +27,10 @@ function Achievements(){
               <div class="achi-details">
                 <div class="ex-details">
                   <h3>WINNER of Smart India Hackathon 2022 <br/><h4>National Level </h4></h3>
-                  <button className="Certificate">Certificate</button>
+                  <a href="https://drive.google.com/file/d/1i1VT6R0AW_9-77o7-p3IaduzILIMeaTF/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+  <button className="Certificate">Certificate</button>
+</a>
+
                   <p>Facial Recognition Attendance System </p>
                   
                 </div>
@@ -52,7 +55,8 @@ function Achievements(){
               <div class="achi-details">
                 <div class="ex-details">
                   <h3> Winner of Entrepreneurship Meet on Emerging Business at Airobosoft</h3>
-                  <button className="Certificate">Certificate</button>
+                  <a href="https://drive.google.com/file/d/1iBsnudw53I5MWFs4o232agwwOrq0EffO/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+  <button className="Certificate">Certificate</button> </a>
                  
                 </div>
                 <div class="ex-info">

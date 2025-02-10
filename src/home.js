@@ -10,7 +10,8 @@ function Home(){
         <>
 
     <div className="content">
-        <img src={pic} alt="Syed Saqhib Suheel" className="photo" />
+    <img src={pic} alt="Syed Saqhib Suheel" className="photo" loading="lazy" />
+
         <h1>
           Hi all, I'm Syed Saqhib Suheel <span>👋</span>
         </h1>
