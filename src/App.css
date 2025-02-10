@@ -137,11 +137,11 @@ body {
 
 @media (max-width: 480px) {
   .content h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .content h3 {
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 30px;
   }
 }
