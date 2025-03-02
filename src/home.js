@@ -3,6 +3,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import ResumeButton from './resume';
+import Lottie from "lottie-react"
+import Cloud from "./images/cloud.json"
+import Animation from "./images/Animation.json"
+
 
 function Home(){
 
@@ -10,7 +15,10 @@ function Home(){
         <>
 
     <div className="content">
-    <img src={pic} alt="Syed Saqhib Suheel" className="photo" loading="lazy" />
+    {/* <img src={Cloud} alt="Syed Saqhib Suheel" className="photo" loading="lazy" /> */}
+    <div className='cloud'>
+    <Lottie className="photo" animationData={Animation}></Lottie>
+    </div>
 
         <h1>
           Hi all, I'm Syed Saqhib Suheel <span>👋</span>
@@ -36,7 +44,7 @@ function Home(){
         </div>
         <a href="#contact">
         <button className="button">Contact Me</button></a>
-        <button className="button">Resume Download</button>
+      <ResumeButton/>
       </div>
 
        <div className="wrapper">

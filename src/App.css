@@ -114,14 +114,30 @@ body {
   text-align: center;
   padding-top: 80px; /* Adjust for fixed navbar */
 }
-
-.photo {
-  width: 330px;
-  height: 300px;
-  border-radius: 50%;
-  border: 5px solid #3498db;
-  margin-bottom: 20px;
+.cloud{
+  position: relative;
+  text-align: center;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
 }
+.photo {
+  position: relative;
+  width: 300px;
+  height: 300px; /* Ensure height is equal to width for a perfect circle */
+ 
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  overflow: hidden; /* Clips any overflow content */
+}
+
+.photo svg {
+  width: 100%; /* Ensure the SVG takes up the full container width */
+  height: 100%; /* Ensure the SVG takes up the full container height */
+  object-fit: contain; /* Ensures the SVG fits within the circle while maintaining aspect ratio */
+}
+
 
 .content h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -132,7 +148,7 @@ body {
 .content h3 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
-  margin: 20px;
+  margin: 10px;
 }
 
 
@@ -219,6 +235,7 @@ body {
   /* Show hamburger icon */
   .hamburger {
     display: block;
+    top: -5px;
   }
 
   .navbar .nav-links.active {
